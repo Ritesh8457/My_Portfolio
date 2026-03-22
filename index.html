@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Kumar Panda | Data Scientist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">RKP<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3 class="gsap-reveal delay-1">Hello, I'm</h3>
+            <h1 class="gsap-reveal delay-2">Ritesh Kumar Panda</h1>
+            <h2 class="gsap-reveal delay-3 typing-text">Entry Level <span>Data Scientist</span></h2>
+            <p class="gsap-reveal delay-4 description">
+                Transforming complex datasets into actionable insights through Machine Learning, Predictive Modeling, and Data Analysis.
+            </p>
+            <div class="cta-buttons gsap-reveal delay-5">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-3d-model-container gsap-reveal delay-6">
+            <!-- Optional placeholder for an embedded 3D object or geometric shapes -->
+            <div class="glass-sphere"></div>
+            <div class="glass-cube"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title gsap-slide-up">Profile <span>Summary</span></h2>
+            <div class="about-wrapper gsap-slide-up">
+                <div class="glass-card about-card">
+                    <p>
+                        Detail-oriented Computer Science graduate with a strong foundation in <strong>Data Analysis</strong>,
+                        <strong>Machine Learning</strong>, and <strong>Predictive Modeling</strong>. Skilled in Python, SQL, and data visualization
+                        tools to analyze complex datasets and generate actionable insights. Experienced in
+                        Exploratory Data Analysis (EDA), feature engineering, and building end-to-end machine
+                        learning pipelines. Passionate about solving real-world problems using data-driven approaches.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="glowing-ring ring-1"></div>
+                    <div class="glowing-ring ring-2"></div>
+                    <div class="glowing-ring ring-3"></div>
+                    <i class="fas fa-network-wired center-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title gsap-slide-up">My <span>Skills</span></h2>
+            
+            <div class="skills-wrapper">
+                <!-- 3D Tag Cloud -->
+                <div class="skills-sphere-container gsap-slide-left">
+                    <span class="sphere-cloud"></span>
+                </div>
+
+                <!-- Skill Bars -->
+                <div class="skills-bars-container gsap-slide-right delay-2">
+                    <div class="skills-glass-card">
+                        <h3>Technical Proficiency</h3>
+                        
+                        <div class="skill-bar-item">
+                            <div class="skill-info"><span>Python & PYSpark</span><span>90%</span></div>
+                            <div class="progress-line"><span class="progress" style="width: 90%; background: var(--accent-cyan); box-shadow: 0 0 10px var(--accent-cyan);"></span></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info"><span>SQL & Databases</span><span>85%</span></div>
+                            <div class="progress-line"><span class="progress" style="width: 85%; background: var(--accent-purple); box-shadow: 0 0 10px var(--accent-purple);"></span></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info"><span>Machine Learning (XGBoost, RF)</span><span>80%</span></div>
+                            <div class="progress-line"><span class="progress" style="width: 80%; background: #00f3ff; box-shadow: 0 0 10px #00f3ff;"></span></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info"><span>Data Analysis & EDA</span><span>85%</span></div>
+                            <div class="progress-line"><span class="progress" style="width: 85%; background: #8a2be2; box-shadow: 0 0 10px #8a2be2;"></span></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-info"><span>Power BI & MS-Excel</span><span>75%</span></div>
+                            <div class="progress-line"><span class="progress" style="width: 75%; background: #0088ff; box-shadow: 0 0 10px #0088ff;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title gsap-slide-up">Featured <span>Projects</span></h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card gsap-slide-up" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <div class="project-content">
+                        <h3>Student Performance Prediction</h3>
+                        <p class="project-desc">Exploratory Data Analysis (EDA) and data preprocessing to identify key factors affecting student performance.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Built and evaluated ML models (Pandas, NumPy, Scikit-learn, XGBoost)</li>
+                            <li><i class="fas fa-check-circle"></i> Developed an end-to-end pipeline and deployed using pickle</li>
+                            <li><i class="fas fa-check-circle"></i> Created an HTML-based web interface for real-time prediction</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Ritesh8457/SPP" target="_blank" class="btn small-btn outline-btn"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-bg-element"></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card gsap-slide-up delay-2" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <div class="project-content">
+                        <h3>Online Grocery Service Analysis</h3>
+                        <p class="project-desc">Analyzed 10,000+ grocery transaction records to identify key business insights and sales trends.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Performed EDA, data cleaning, and transformation using Python</li>
+                            <li><i class="fas fa-check-circle"></i> Built an interactive Power BI dashboard for visualizing insights</li>
+                            <li><i class="fas fa-check-circle"></i> Provided data-driven decisions to improve sales and demand strategy</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Ritesh8457/Online-Grocery-Data-Analysis" target="_blank" class="btn small-btn outline-btn"><i class="fab fa-github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-bg-element type-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding">
+        <div class="container">
+            <h2 class="section-title gsap-slide-up">Education & <span>Certifications</span></h2>
+            
+            <div class="timeline">
+                <!-- Education Item -->
+                <div class="timeline-item gsap-slide-left">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-date">2021 - 2025</div>
+                        <h3>B.Tech in Computer Science and Engineering</h3>
+                        <h4>Vikash Institute of Technology, Bargarh</h4>
+                    </div>
+                </div>
+
+                <!-- 12th Science -->
+                <div class="timeline-item right gsap-slide-right">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <h3>12th in Science</h3>
+                        <h4>Panchayat Higher Secondary School, Bargarh</h4>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="timeline-item gsap-slide-left delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-date">Certifications</div>
+                        <h3>Professional Qualifications</h3>
+                        <ul class="cert-list">
+                            <li><i class="fas fa-certificate"></i> Google Data Analytics Professional Certificate</li>
+                            <li><i class="fas fa-shield-alt"></i> Microsoft Cyber Security Certification</li>
+                            <li><i class="fas fa-paint-brush"></i> Graphic Design Certification – NIIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title gsap-slide-up">Get In <span>Touch</span></h2>
+            
+            <div class="contact-wrapper">
+                <div class="glass-card contact-info gsap-slide-up">
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:pandaritesh571@gmail.com">pandaritesh571@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+918457023113">+91 8457023113</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/ritesh-kumar-panda" target="_blank">ritesh-kumar-panda</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ritesh Kumar Panda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Libraries -->
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for Scroll Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Vanilla Tilt for 3D Card effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <!-- TagCloud for 3D Skills Sphere -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
