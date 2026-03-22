@@ -117,22 +117,7 @@ gsap.utils.toArray(".gsap-slide-right").forEach(elem => {
     });
 });
 
-// Animate Skill Progress Bars
-gsap.utils.toArray(".progress").forEach(bar => {
-    const targetWidth = bar.style.width;
-    bar.style.width = "0%"; // reset before scroll
-    
-    gsap.to(bar, {
-        scrollTrigger: {
-            trigger: bar,
-            start: "top 85%",
-        },
-        width: targetWidth,
-        duration: 1.5,
-        delay: 0.5,
-        ease: "power3.out"
-    });
-});
+// (Progress bar animation removed as requested)
 
 
 // ==========================================
