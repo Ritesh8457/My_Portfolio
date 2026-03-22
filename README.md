@@ -1,5 +1,7 @@
 # 3D Data Scientist Portfolio
 
+**Live Portfolio**: [https://my-portfolio-jacx.onrender.com](https://my-portfolio-jacx.onrender.com)
+
 A premium, highly interactive 3D portfolio website custom-built for an Entry-Level Data Scientist. The design utilizes a modern dark theme with vibrant cybernetic accents, cutting-edge CSS glassmorphism, and high-performance WebGL animations.
 
 ## 🌟 Key Features
